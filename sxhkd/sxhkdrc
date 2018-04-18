@@ -348,16 +348,16 @@ XF86MonBrightnessDown
 #########################   
 
 # Focus selected desktop
-super + {1-9,0}
-	bspc desktop --focus ^{1-9,10}
+super + {1-5}
+	bspc desktop --focus ^{1-5}
 	
 #Focus selected desktop
 alt + Tab
-	bspc desktop --focus ^{1-9,10}
+	bspc desktop --focus ^{1-5}
 	
 #Focus selected desktop
 super + Tab
-	bspc desktop --focus ^{1-9,10}	
+	bspc desktop --focus ^{1-5}	
 
 #Navigate layouts
 #super + {_,shift + }space
