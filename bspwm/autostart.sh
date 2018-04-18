@@ -11,10 +11,11 @@ function run {
 
 
 $HOME/.config/polybar/launch.sh &
+#setxkbmap -layout be
 xsetroot -cursor_name left_ptr &
 sxhkd &
 nm-applet &
-variety &
+variety -q &
 pamac-tray &
 xfce4-power-manager &
 numlockx on &
@@ -26,4 +27,3 @@ compton --config $HOME/.config/bspwm/compton.conf &
 #caffeine &
 #dropbox &
 #blueberry-tray &
-
