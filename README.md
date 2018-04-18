@@ -1,4 +1,7 @@
-# ArcoLinuxD BSPWM desktop
+# ArcoLinuxD BSPWM
+
+All credits to Nick Petrov & Kevin Yanez aka (INTRCPTR)	for making this configuration.
+
 
 # Start by installing the latest ArcoLinuxD installation
 
