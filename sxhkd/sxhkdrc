@@ -104,7 +104,7 @@ super + Escape
     
 #Terminal emulator
 super + Return
-	urxvt
+	termite
 	
 #########################
 # SUPER + SHIFT KEYS    #
