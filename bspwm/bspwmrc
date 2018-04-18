@@ -33,7 +33,7 @@ bspc rule -a VirtualBox Machine state=fullscreen
 bspc rule -a Xfce4-appfinder  state=floating sticky=on
 bspc rule -a Gpick state=floating sticky=on
 bspc rule -a mpv state=floating sticky=on
-bspc rule -a Pavucontrol state=floating sticky=on
+#bspc rule -a Pavucontrol state=floating sticky=on
 bspc rule -a feh state=floating
 bspc rule -a Nitrogen state=floating
 bspc rule -a Arandr state=floating
