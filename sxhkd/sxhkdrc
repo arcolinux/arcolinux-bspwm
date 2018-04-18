@@ -170,6 +170,10 @@ ctrl + alt + i
 #Screen-Locker    
 ctrl + alt + k
      slimlock
+
+#Xfce4-settings-manager    
+ctrl + alt + m
+     xfce4-settings-manager      
      
 #Compton Toggle    
 ctrl + alt + o
