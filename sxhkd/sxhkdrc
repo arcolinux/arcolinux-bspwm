@@ -74,7 +74,7 @@ super + h
 super + m
     spotify
     
-# Toogle pseudo tiling of window
+# Toggle pseudo tiling of window
 super + p
 	bspc node --state \~pseudo_tiled      
     
