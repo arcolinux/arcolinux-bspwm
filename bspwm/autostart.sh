@@ -12,6 +12,7 @@ function run {
 
 $HOME/.config/polybar/launch.sh &
 #setxkbmap -layout be
+feh --bg-scale ~/.config/bspwm/wall.png &
 xsetroot -cursor_name left_ptr &
 sxhkd &
 nm-applet &
