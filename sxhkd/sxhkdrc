@@ -359,6 +359,10 @@ alt + Tab
 super + Tab
 	bspc desktop --focus ^{1-5}
 	
+# move focus to the given workspace
+super + {_,shift + }{1-5}
+	bspc {desktop -f,node -d} '^{1-5}'	
+	
 # Focus next/previous window
 ctrl + alt + Left
 	bspc node --focus prev
