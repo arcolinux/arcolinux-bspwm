@@ -264,7 +264,7 @@ alt + shift + n
     variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
     
 #Wallpaper previous
-alt + shift +p
+alt + shift + p
     variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)& 
     
 #Wallpaper favorite
@@ -357,7 +357,15 @@ alt + Tab
 	
 #Focus selected desktop
 super + Tab
-	bspc desktop --focus ^{1-5}	
+	bspc desktop --focus ^{1-5}
+	
+# Focus next/previous window
+ctrl + alt + Left
+	bspc node --focus prev
+	
+# Focus next/previous window
+ctrl + alt + Right
+	bspc node --focus next	
 
 #Navigate layouts
 #super + {_,shift + }space
