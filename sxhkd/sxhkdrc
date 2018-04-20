@@ -11,136 +11,140 @@
 # Vivaldi
 super + F1
 	vivaldi-stable
-	
+
 # Atom
 super + F2
 	atom
-	
-#Inkscape	
+
+#Inkscape
 super + F3
     inkscape
-    
+
 #Gimp
 super + F4
-    gimp 
-    
+    gimp
+
 #Meld
 super + F5
     meld
-    
+
 #Vlc
 super + F6
     vlc --video-on-top
-    
+
 #Virtualbox
 super + F7
     virtualbox
-    
+
 #Thunar
 super + F8
     thunar
-    
+
 #Evolution
 super + F9
     evolution
-    
+
 #Spotify
 super + F10
-    spotify  
-    
+    spotify
+
 #Rofi Fullscreen
 super + F11
-    rofi -show run -fullscreen 
-    
-#Rofi 
+    rofi -show run -fullscreen
+
+#Rofi
 super + F12
-    rofi -show run 
-    
+    rofi -show run
+
 #########################
 # SUPER + ... KEYS      #
-#########################                            	
+#########################
 
 #Draw-termite
 super + d
-	~/.config/bspwm/scripts/draw_termite.sh 
-	
+	~/.config/bspwm/scripts/draw_termite.sh
+
 #Atom
 super + e
     atom
-    
+
 #Toggle fullscreen of window
 super + f
-	bspc node --state \~fullscreen    
-   
+	bspc node --state \~fullscreen
+
 #Htop
 super + h
     termite 'htop task manager' -e htop
-    
-#spotify
+
+#music player
 super + m
-    spotify
-    
+    pragha
+
 # Toggle pseudo tiling of window
 super + p
-	bspc node --state \~pseudo_tiled      
-    
+	bspc node --state \~pseudo_tiledw
+
 #Firefox
 super + q
     firefox
-    
+
 #Rofi theme selector
 super + r
     rofi-theme-selector
-    
+
 #Termite
 super + t
     termite
-    
+
 #Pavucontrol
 super + v
     pavucontrol
-    
+
+#Browser
+super + w
+    vivaldi-stable
+
 #Oblogout
 super + x
-    oblogout   
-    
+    oblogout
+
 #Xkill
 super + Escape
-    xkill 
-    
+    xkill
+
 #Terminal emulator
 super + Return
 	termite
-	
+
 #########################
 # SUPER + SHIFT KEYS    #
-#########################	
+#########################
 
 #File-Manager
 super + shift + Return
 	thunar
-	     
+
 #DMENU
 super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
-	
+
 #Reload bspwm
-super + shift + r 
+super + shift + r
 	~/.config/bspwm/bspwmrc
-	
+
 #reload sxhkd:
 super + shift + s
 	pkill -USR1 -x sxhkd
-	
+
 #kill
 super + shift + q
-	bspc node -k		
-	
+	bspc node -k
+
 #Logout
 super + shift + x
-	bspc quit	
-	
-	
+	bspc quit
+
+
 #########################
 # CONTROL + ALT KEYS    #
 #########################
@@ -148,139 +152,143 @@ super + shift + x
 #Xfce4-appfinder
 ctrl + alt + a
      xfce4-appfinder
-     
-#File-Manager    
+
+#File-Manager
 ctrl + alt + b
-     thunar 
-     
-#Catfish    
+     thunar
+
+#Catfish
 ctrl + alt + c
      catfish
-     
-#Evolution    
+
+#Evolution
 ctrl + alt + e
      evolution
-     
-#Firefox    
+
+#Firefox
 ctrl + alt + f
-     firefox 
-     
-#Chromium    
+     firefox
+
+#Chromium
 ctrl + alt + g
      chromium -no-default-browser-check
-     
-#Nitrogen   
+
+#Nitrogen
 ctrl + alt + i
-     nitrogen 
-     
-#Screen-Locker    
+     nitrogen
+
+#Screen-Locker
 ctrl + alt + k
      slimlock
 
-#Xfce4-settings-manager    
+#Xfce4-settings-manager
 ctrl + alt + m
-     xfce4-settings-manager      
-     
-#Compton Toggle    
+     xfce4-settings-manager
+
+#Compton Toggle
 ctrl + alt + o
-     ~/.config/bspwm/scripts/compton-toggle.sh 
-     
-#Spotify    
+     ~/.config/bspwm/scripts/compton-toggle.sh
+
+#Spotify
 ctrl + alt + s
-     spotify     
-     
-#Termite    
+     spotify
+
+#Termite
 ctrl + alt + t
-     termite 
-     
-#Pulse Audio Control   
+     termite
+
+#Rofi theme selector
+ctrl + alt + r
+   rofi-theme-selector
+
+#Pulse Audio Control
 ctrl + alt + u
      pavucontrol
-     
-#Vivaldi    
+
+#Vivaldi
 ctrl + alt + v
      vivaldi-stable
-     
-#Atom    
+
+#Atom
 ctrl + alt + w
-     atom 
-     
-#Termite    
+     atom
+
+#Termite
 ctrl + alt + Return
      termite
-     
-     
+
+
 #########################
 # ALT + ... KEYS        #
-#########################                                       
-     
-     
+#########################
+
+
 #Wallpaper trash
 alt + t
     variety -t
-    
+
 #Wallpaper next
 alt + n
     variety -n
-    
+
 #Wallpaper previous
 alt + p
-    variety -p 
-    
+    variety -p
+
 #Wallpaper favorite
 alt + f
     variety -f
-    
+
 #Wallpaper previous
 alt + Left
     variety -p
-    
+
 #Wallpaper next
 alt + Right
     variety -n
-    
+
 #Wallpaper pause
 alt + Up
     variety --pause
-    
+
 #Wallpaper resume
 alt + Down
     variety --resume
-    
+
 #Gmrun
 alt + F2
     gmrun
-    
+
 #Xfce4-appfinder
 alt + F3
     xfce4-appfinder
-    
-	
+
+
 #########################
 #VARIETY KEYS WITH PYWAL#
-#########################	
-	
+#########################
+
 
 #Wallpaper trash
 alt + shift +t
     variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
-    
+
 #Wallpaper next
 alt + shift + n
     variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
-    
+
 #Wallpaper previous
 alt + shift + p
-    variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)& 
-    
+    variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+
 #Wallpaper favorite
 alt + shift + f
     variety -f && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
-         
+
 #Wallpaper update
 alt + shift + u
     wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
-    
+
 #########################
 # CONTROL + SHIFT KEYS  #
 #########################
@@ -288,31 +296,31 @@ alt + shift + u
 #Xcfe4-TaskManager
 ctrl + shift + Escape
     xfce4-taskmanager
-    
-    
+
+
 #########################
 #     SCREENSHOTS       #
-#########################  
+#########################
 
 
 
 #Scrot
 Print
     scrot 'ArcoLinuxD-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
-    
-#screeenshooter    
+
+#screeenshooter
 ctrl + Print
      xfce4-screenshooter
-     
-#Gnome-Screenshot    
+
+#Gnome-Screenshot
 ctrl + shift + Print
-     gnome-screenshot -i          
-     
-     
+     gnome-screenshot -i
+
+
 #########################
 #     MULTIMEDIA KEYS   #
-#########################                                    
-                   	
+#########################
+
 #Raises volume
 XF86AudioRaiseVolume
     amixer set Master 10%+
@@ -324,54 +332,54 @@ XF86AudioLowerVolume
 #Mute
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
-        
+
 #PLAY
-XF86AudioPlay 
+XF86AudioPlay
     mpc toggle
-#Next   
+#Next
 XF86AudioNext
    	mpc next
-   	
+
 #previous
 XF86AudioPrev
     mpc prev
-    
+
 #Stop
 XF86AudioStop
     mpc stop
-    
+
 #Brightness up
 XF86MonBrightnessUp
     xbacklight -inc 10
-    
+
 #Brightness down
 XF86MonBrightnessDown
-    xbacklight -dec 10        
-    
-    
+    xbacklight -dec 10
+
+
 #########################
 # BSPWM LAYOUT KEYS     #
-#########################   
+#########################
 
 #################################################################
 
 # Focus selected desktop FOR QWERTY KEYBOARDS
 super + {1-5}
 	bspc desktop --focus ^{1-5}
-	
+
 #Focus selected desktop	FOR AZERTY KEYBOARDS
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft}
 #    bspc desktop --focus ^{1-5}
 
 #################################################################
-	
+
 #Move window to selected desktop FOR QWERTY KEYBOARDS
 super + shift + {1-5}
     id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}
-    
+
 #Move window to selected desktop FOR AZERTY KEYBOARDS
 #super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft}
-#    id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}   
+#    id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}
 
 #################################################################
 
@@ -379,44 +387,44 @@ super + shift + {1-5}
 #Focus selected desktop
 alt + Tab
 	bspc desktop --focus ^{1-5}
-	
+
 #Focus selected desktop
 super + Tab
-	bspc desktop --focus ^{1-5}	
-	
-	
+	bspc desktop --focus ^{1-5}
+
+
 # Focus next/previous window
 ctrl + alt + Left
 	bspc node --focus west
-	
+
 # Focus next/previous window
 ctrl + alt + Right
 	bspc node --focus east
-	
+
 # Focus Up window
 ctrl +alt + Up
 	bspc node --focus north
-	
+
 # Focus Down window
 ctrl + alt + Down
-	bspc node --focus south	
-	
+	bspc node --focus south
+
 #Rotate desktop
 alt + space
 	bspc node @/ --rotate {90,-90}
-	
+
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
 	bspc node --{focus,swap} {west,south,north,east}
-	
+
 # Focus/swap windows by direction
 ctrl + super + {Left,Down,Up,Right}
-	bspc node --{focus} {west,south,north,east}		
-	
+	bspc node --{focus} {west,south,north,east}
+
 # Flip layout vertically/horizontally
 super + {_,shift + }a
-	bspc node @/ --flip {vertical,horizontal}	
-	
+	bspc node @/ --flip {vertical,horizontal}
+
 # Expand tiled space
 alt + shift + {h,j,k,l}
 	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
@@ -424,27 +432,15 @@ alt + shift + {h,j,k,l}
 # Contract tiled space
 super + ctrl + {h,j,k,l}
 	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
-	
+
 # Increase/decrease window gap on focused desktop
 super + bracket{left,right}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
-	
+
 # Move floating window
 super + alt + {_,shift + }{Left,Down,Up,Right}
 	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
-          	
+
 # set the window state
 super + space
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-	
-	   
-
-
-	
-
-
-	
-
-
-		
-

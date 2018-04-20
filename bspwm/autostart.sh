@@ -18,6 +18,8 @@ sxhkd &
 nm-applet &
 variety -q &
 pamac-tray &
+nm-applet &
+volumeicon &
 xfce4-power-manager &
 numlockx on &
 conky -c $HOME/.config/bspwm/system-overview &

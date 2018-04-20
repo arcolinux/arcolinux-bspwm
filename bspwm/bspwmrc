@@ -21,7 +21,7 @@ bspc config history_aware_focus  true
 
 bspc monitor -d 1 2 3 4 5
 
-bspc rule -a Gimp state=fullscreen
+#bspc rule -a Gimp state=fullscreen
 bspc rule -a inkscape state=fullscreen
 bspc rule -a Spotify state=fullscreen
 bspc rule -a Vlc state=fullscreen
@@ -30,8 +30,8 @@ bspc rule -a VirtualBox Manager state=fullscreen
 bspc rule -a VirtualBox Machine state=fullscreen
 
 
-bspc rule -a Xfce4-appfinder  state=floating sticky=on
-bspc rule -a Gpick state=floating sticky=on
+#bspc rule -a Xfce4-appfinder  state=floating sticky=on
+#bspc rule -a Gpick state=floating sticky=on
 bspc rule -a mpv state=floating sticky=on
 #bspc rule -a Pavucontrol state=floating sticky=on
 bspc rule -a feh state=floating
@@ -40,8 +40,8 @@ bspc rule -a Arandr state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a Font-manager state=floating
 bspc rule -a Oblogout state=floating
-bspc rule -a Peek state=floating
-bspc rule -a Skype state=floating
+#bspc rule -a Peek state=floating
+#bspc rule -a Skype state=floating
 
 
 ###External rules
