@@ -76,7 +76,7 @@ super + m
 
 # Toggle pseudo tiling of window
 super + p
-	bspc node --state \~pseudo_tiledw
+	bspc node --state \~pseudo_tiled
 
 #Firefox
 super + q
@@ -264,7 +264,7 @@ alt + F3
 
 
 #Wallpaper trash
-alt + shift +t
+alt + shift + t
     variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
 #Wallpaper next
