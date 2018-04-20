@@ -29,3 +29,4 @@ compton --config $HOME/.config/bspwm/compton.conf &
 #dropbox &
 #blueberry-tray &
 #thunar &
+#insync start &
