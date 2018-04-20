@@ -1,9 +1,3 @@
-
-#azerty keyboard layout for numbers 1-10
-#{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
-
-
-
 #########################
 # SUPER + FUNCTION KEYS #
 #########################
@@ -360,6 +354,9 @@ XF86MonBrightnessDown
 #########################
 # BSPWM LAYOUT KEYS     #
 #########################
+
+#azerty keyboard layout for numbers 1-10
+#{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
 
 #################################################################
 
