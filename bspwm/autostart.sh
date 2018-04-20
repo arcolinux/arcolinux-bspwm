@@ -28,3 +28,4 @@ compton --config $HOME/.config/bspwm/compton.conf &
 #caffeine &
 #dropbox &
 #blueberry-tray &
+#thunar &
