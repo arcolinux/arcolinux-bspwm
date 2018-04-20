@@ -379,11 +379,11 @@ super + shift + {1-5}
 	
 # Focus next/previous window
 ctrl + alt + Left
-	bspc node --focus prev
+	bspc node --focus west
 	
 # Focus next/previous window
 ctrl + alt + Right
-	bspc node --focus next
+	bspc node --focus east
 	
 # Focus Up window
 ctrl +alt + Up
