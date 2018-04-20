@@ -1,3 +1,4 @@
+
 #azerty keyboard layout for numbers 1-10
 #{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
 
@@ -382,11 +383,15 @@ ctrl + alt + Left
 	
 # Focus next/previous window
 ctrl + alt + Right
-	bspc node --focus next	
-
-#Navigate layouts
-#super + {_,shift + }space
-#	bspc desktop --layout {next,prev}
+	bspc node --focus next
+	
+# Focus Up window
+ctrl +alt + Up
+	bspc node --focus north
+	
+# Focus Down window
+ctrl + alt + Down
+	bspc node --focus south	
 	
 #Rotate desktop
 alt + space
