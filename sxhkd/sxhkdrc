@@ -351,20 +351,25 @@ XF86MonBrightnessDown
 super + {1-5}
 	bspc desktop --focus ^{1-5}
 	
+#Focus selected desktop	FOR AZERTY KEYBOARDS
+#super + {ampersand,eacute,quotedbl,apostrophe,parenleft}
+#    bspc desktop --focus ^{1-5}
+	
 #Focus selected desktop
 alt + Tab
 	bspc desktop --focus ^{1-5}
 	
 #Focus selected desktop
 super + Tab
-	bspc desktop --focus ^{1-5}
-	
-# move focus to the given workspace
-#super + {_,shift + }{1-5}
-#	bspc {desktop -f,node -d} '^{1-5}'
+	bspc desktop --focus ^{1-5}	
 
+#Move window to selected desktop
 super + shift + {1-5}
-    id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}	
+    id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}
+    
+#Move window to selected desktop FOR AZERTY KEYBOARDS
+#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft}
+#    id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}   	
 	
 # Focus next/previous window
 ctrl + alt + Left
