@@ -323,33 +323,36 @@ XF86AudioLowerVolume
 XF86AudioMute
     amixer -D pulse set Master 1+ toggle
 
+#Playerctl works for Pragha, Spotify and others
+#mpc works for ncmpcpp
+
 #PLAY
 XF86AudioPlay
     mpc toggle
-        #playerctl play-pause
+    #playerctl play-pause
 
 #Next
 XF86AudioNext
-       mpc next
-        #playerctl next
+     mpc next
+     #playerctl next
 
 #previous
 XF86AudioPrev
     mpc prev
-        #playerctl previous
+    #playerctl previous
 
 #Stop
 XF86AudioStop
     mpc stop
-        #playerctl stop
-        
+    #playerctl stop
+
 #Brightness up
 XF86MonBrightnessUp
     xbacklight -inc 10
 
 #Brightness down
 XF86MonBrightnessDown
-    xbacklight -dec 10        
+    xbacklight -dec 10
 
 
 #########################
