@@ -352,7 +352,7 @@ XF86MonBrightnessDown
 #########################
 
 #azerty keyboard layout for numbers 1-10
-#{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
+#{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 
 #################################################################
 
@@ -360,7 +360,7 @@ XF86MonBrightnessDown
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 #Focus selected desktop	FOR AZERTY KEYBOARDS
-#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
+#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 #    bspc desktop -f '^{1-9,10}'
 
 #################################################################
@@ -370,7 +370,7 @@ super + shift + {1-9,0}
     id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #Move window to selected desktop FOR AZERTY KEYBOARDS
-#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
+#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 #    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #################################################################
