@@ -356,34 +356,33 @@ XF86MonBrightnessDown
 
 #################################################################
 
-# Focus selected desktop FOR QWERTY KEYBOARDS
-super + {1-5}
-	bspc desktop --focus ^{1-5}
-
+#Focus selected desktop FOR QWERTY KEYBOARDS
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
 #Focus selected desktop	FOR AZERTY KEYBOARDS
-#super + {ampersand,eacute,quotedbl,apostrophe,parenleft}
-#    bspc desktop --focus ^{1-5}
+#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
+#    bspc desktop -f '^{1-9,10}'
 
 #################################################################
 
 #Move window to selected desktop FOR QWERTY KEYBOARDS
-super + shift + {1-5}
-    id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}
+super + shift + {1-9,0}
+    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #Move window to selected desktop FOR AZERTY KEYBOARDS
-#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft}
-#    id=$(bspc query -N -n); bspc node -d ^{1-5}; bspc node -f ${id}}
+#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
+#    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #################################################################
 
 
 #Focus selected desktop
 alt + Tab
-	bspc desktop --focus ^{1-5}
+	bspc desktop -f '^{1-9,10}'
 
 #Focus selected desktop
 super + Tab
-	bspc desktop --focus ^{1-5}
+	bspc desktop -f '^{1-9,10}'
 
 
 # Focus next/previous window
@@ -447,8 +446,8 @@ super + ctrl + {u,i,o,p}
 	bspc node --presel-dir \~{west,south,north,east}
 
 # Define splitting ratio for next window on leaf/parent
-super + ctrl + {_,shift +}{1-5}
-	bspc node {_,@/} --presel-ratio 0.{1-5}
+super + ctrl + {_,shift +}{1-9}
+	bspc node {_,@/} --presel-ratio 0.{1-9}
 
 # Cancel preselection
 super + ctrl + space
