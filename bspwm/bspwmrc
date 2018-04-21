@@ -50,6 +50,9 @@ bspc rule -a Oblogout state=floating
 #bspc rule -a Xfce4-appfinder  state=floating sticky=on
 #bspc rule -a Gpick state=floating sticky=on
 
+#Tiled applications
+bspc rule -a Xfce4-settings-manager state=tiled
+
 #open applications on specific workspaces
 #bspc rule -a Firefox desktop=^2
 
