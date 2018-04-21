@@ -437,3 +437,19 @@ super + alt + {_,shift + }{Left,Down,Up,Right}
 # set the window state
 super + space
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+	
+# Focus parent/brother/first/second for preselection
+super + ctrl + {e,r,t,y}
+	bspc node --focus @{parent,brother,first,second}
+
+# Preselect the splitting area for next window on leaf/parent
+super + ctrl + {u,i,o,p}
+	bspc node --presel-dir \~{west,south,north,east}
+
+# Define splitting ratio for next window on leaf/parent
+super + ctrl + {_,shift +}{1-5}
+	bspc node {_,@/} --presel-ratio 0.{1-5}
+
+# Cancel preselection
+super + ctrl + space
+	bspc node --presel-dir cancel	
