@@ -326,25 +326,22 @@ XF86AudioMute
 #PLAY
 XF86AudioPlay
     mpc toggle
+        #playerctl play-pause
+
 #Next
 XF86AudioNext
-   	mpc next
+       mpc next
+        #playerctl next
 
 #previous
 XF86AudioPrev
     mpc prev
+        #playerctl previous
 
 #Stop
 XF86AudioStop
     mpc stop
-
-#Brightness up
-XF86MonBrightnessUp
-    xbacklight -inc 10
-
-#Brightness down
-XF86MonBrightnessDown
-    xbacklight -dec 10
+        #playerctl stop
 
 
 #########################
