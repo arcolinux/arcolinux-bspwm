@@ -19,21 +19,25 @@ bspc config gapless_monocle      true
 bspc config focus_by_distance    true
 bspc config history_aware_focus  true
 
-bspc monitor -d 1 2 3 4 5
+#Single monitor
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
-#bspc rule -a Gimp state=fullscreen
+#Dual monitor
+#find out names with arandr or xrandr
+#bspc monitor HDMI1 -d 1 2 3 4 5
+#bspc monitor HDMI2 -d 6 7 8 9 10
+
+#Fullscreen applications
 bspc rule -a inkscape state=fullscreen
 bspc rule -a Spotify state=fullscreen
 bspc rule -a Vlc state=fullscreen
 bspc rule -a Gnome-disks state=fullscreen
 bspc rule -a VirtualBox Manager state=fullscreen
 bspc rule -a VirtualBox Machine state=fullscreen
+#bspc rule -a Gimp state=fullscreen
 
-
-#bspc rule -a Xfce4-appfinder  state=floating sticky=on
-#bspc rule -a Gpick state=floating sticky=on
+#Floating applications
 bspc rule -a mpv state=floating sticky=on
-#bspc rule -a Pavucontrol state=floating sticky=on
 bspc rule -a feh state=floating
 bspc rule -a Nitrogen state=floating
 bspc rule -a Arandr state=floating
@@ -42,7 +46,12 @@ bspc rule -a Font-manager state=floating
 bspc rule -a Oblogout state=floating
 #bspc rule -a Peek state=floating
 #bspc rule -a Skype state=floating
+#bspc rule -a Pavucontrol state=floating sticky=on
+#bspc rule -a Xfce4-appfinder  state=floating sticky=on
+#bspc rule -a Gpick state=floating sticky=on
 
+#open applications on specific workspaces
+#bspc rule -a Firefox desktop=^2
 
 ###External rules
 ##Pseudo automatic mode: always splits focused window when opening new window
