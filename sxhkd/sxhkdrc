@@ -342,6 +342,14 @@ XF86AudioPrev
 XF86AudioStop
     mpc stop
         #playerctl stop
+        
+#Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+#Brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 10        
 
 
 #########################
