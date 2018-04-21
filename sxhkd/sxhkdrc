@@ -54,10 +54,6 @@ super + F12
 # SUPER + ... KEYS      #
 #########################
 
-#Draw-termite
-super + d
-	~/.config/bspwm/scripts/draw_termite.sh
-
 #Atom
 super + e
     atom
@@ -68,7 +64,7 @@ super + f
 
 #Htop
 super + h
-    termite 'htop task manager' -e htop
+    urxvt 'htop task manager' -e htop
 
 #music player
 super + m
@@ -86,9 +82,9 @@ super + q
 super + r
     rofi-theme-selector
 
-#Termite
+#Urxvt
 super + t
-    termite
+    urxvt
 
 #Pavucontrol
 super + v
@@ -108,7 +104,7 @@ super + Escape
 
 #Terminal emulator
 super + Return
-	termite
+	urxvt
 
 #########################
 # SUPER + SHIFT KEYS    #
@@ -187,9 +183,9 @@ ctrl + alt + o
 ctrl + alt + s
      spotify
 
-#Termite
+#Urxvt
 ctrl + alt + t
-     termite
+     urxvt
 
 #Rofi theme selector
 ctrl + alt + r
@@ -207,9 +203,9 @@ ctrl + alt + v
 ctrl + alt + w
      atom
 
-#Termite
+#Urxvt
 ctrl + alt + Return
-     termite
+     urxvt
 
 
 #########################
