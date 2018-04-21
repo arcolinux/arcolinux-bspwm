@@ -19,7 +19,6 @@ nm-applet &
 variety -q &
 pamac-tray &
 nm-applet &
-volumeicon &
 xfce4-power-manager &
 numlockx on &
 conky -c $HOME/.config/bspwm/system-overview &
@@ -28,6 +27,7 @@ compton --config $HOME/.config/bspwm/compton.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #nitrogen --restore &
 #caffeine &
+#volumeicon &
 #dropbox &
 #blueberry-tray &
 #thunar &
