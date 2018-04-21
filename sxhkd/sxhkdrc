@@ -359,6 +359,7 @@ XF86MonBrightnessDown
 #Focus selected desktop FOR QWERTY KEYBOARDS
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
+
 #Focus selected desktop	FOR AZERTY KEYBOARDS
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 #    bspc desktop -f '^{1-9,10}'
@@ -436,7 +437,7 @@ super + alt + {_,shift + }{Left,Down,Up,Right}
 # set the window state
 super + space
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-	
+
 # Focus parent/brother/first/second for preselection
 super + ctrl + {e,r,t,y}
 	bspc node --focus @{parent,brother,first,second}
@@ -451,4 +452,4 @@ super + ctrl + {_,shift +}{1-9}
 
 # Cancel preselection
 super + ctrl + space
-	bspc node --presel-dir cancel	
+	bspc node --presel-dir cancel
