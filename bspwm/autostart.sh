@@ -16,7 +16,7 @@ feh --bg-scale ~/.config/bspwm/wall.png &
 xsetroot -cursor_name left_ptr &
 sxhkd &
 nm-applet &
-variety -q &
+variety &
 pamac-tray &
 nm-applet &
 xfce4-power-manager &
