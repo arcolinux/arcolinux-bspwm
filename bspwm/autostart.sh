@@ -15,10 +15,10 @@ $HOME/.config/polybar/launch.sh &
 feh --bg-scale ~/.config/bspwm/wall.png &
 xsetroot -cursor_name left_ptr &
 sxhkd &
-nm-applet &
-variety &
-pamac-tray &
-xfce4-power-manager &
+run nm-applet &
+run variety &
+run pamac-tray &
+run xfce4-power-manager &
 numlockx on &
 conky -c $HOME/.config/bspwm/system-overview &
 compton --config $HOME/.config/bspwm/compton.conf &
