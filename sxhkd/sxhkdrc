@@ -106,6 +106,10 @@ super + Escape
 super + Return
 	urxvt
 
+#Terminal emulator
+super + KP_Enter
+	urxvt
+
 #########################
 # SUPER + SHIFT KEYS    #
 #########################
@@ -113,6 +117,11 @@ super + Return
 #File-Manager
 super + shift + Return
 	thunar
+
+#File-Manager
+super + shift + KP_Enter
+	thunar
+
 
 #DMENU
 super + shift + d
@@ -206,6 +215,10 @@ ctrl + alt + w
 #Urxvt
 ctrl + alt + Return
      urxvt
+
+#Urxvt
+ctrl + alt + KP_Enter
+     urxvt     
 
 
 #########################
