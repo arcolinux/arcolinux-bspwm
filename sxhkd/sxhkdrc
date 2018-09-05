@@ -106,9 +106,10 @@ super + Escape
 super + Return
 	urxvt
 
+#Keyboard dependent
 #Terminal emulator
-super + KP_Enter
-	urxvt
+#super + KP_Enter
+#	urxvt
 
 #########################
 # SUPER + SHIFT KEYS    #
@@ -118,9 +119,10 @@ super + KP_Enter
 super + shift + Return
 	thunar
 
+#Keyboard dependent
 #File-Manager
-super + shift + KP_Enter
-	thunar
+#super + shift + KP_Enter
+#	thunar
 
 
 #DMENU
@@ -216,9 +218,10 @@ ctrl + alt + w
 ctrl + alt + Return
      urxvt
 
+#Keyboard dependent
 #Urxvt
-ctrl + alt + KP_Enter
-     urxvt     
+#ctrl + alt + KP_Enter
+#     urxvt     
 
 
 #########################
