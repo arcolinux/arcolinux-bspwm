@@ -1,15 +1,18 @@
 #!/bin/sh
 
-
 #LAUNCHERS
 $HOME/.config/bspwm/autostart.sh
+#fix for moving spotify to specific workspace
+#bspc config external_rules_command ~/.config/bspwm/external_rules_command
 
-
-bspc config border_width         3
+#BSPWM configuration
+bspc config border_width         2
 bspc config window_gap           10
 bspc config top_padding          30
-bspc config bottom_padding       30
-bspc config single_monocle        false
+bspc config bottom_padding       10
+bspc config left_padding         10
+bspc config right_padding        10
+bspc config single_monocle       false
 bspc config click_to_focus	 true
 bspc config split_ratio          0.50
 bspc config borderless_monocle   true
@@ -23,11 +26,13 @@ bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
 bspc config remove_disabled_monitors true
 bspc config merge_overlapping_monitors true
+
+#BSPWM coloring
 bspc config normal_border_color		"#4c566a"
 bspc config active_border_color		"#1e1e1e"
 bspc config focused_border_color	"#5e81ac"
 bspc config presel_feedback_color	"#5e81ac"
-bspc config urgent_border_color 	"#010101"
+bspc config urgent_border_color 	"#dd2727"
 
 
 #Single monitor
@@ -55,17 +60,17 @@ bspc rule -a VirtualBox Machine state=fullscreen
 #Floating applications
 bspc rule -a Arandr state=floating
 bspc rule -a feh state=floating
-bspc rule -a mpv state=floating sticky=on
-bspc rule -a Font-manager state=floating
+#bspc rule -a mpv state=floating sticky=on
+#bspc rule -a Font-manager state=floating
 bspc rule -a Galculator state=floating
 #bspc rule -a Gpick state=floating sticky=on
-bspc rule -a Nitrogen state=floating
+#bspc rule -a Nitrogen state=floating
 bspc rule -a Oblogout state=floating
 #bspc rule -a Pavucontrol state=floating sticky=on
 #bspc rule -a Peek state=floating
 #bspc rule -a Skype state=floating
 #bspc rule -a Stacer state=floating
-#bspc rule -a Xfce4-appfinder  state=floating sticky=on 
+#bspc rule -a Xfce4-appfinder  state=floating sticky=on
 
 #Tiled applications
 bspc rule -a Xfce4-settings-manager state=tiled
@@ -77,7 +82,7 @@ bspc rule -a Xfce4-settings-manager state=tiled
 #bspc rule -a Chromium desktop='^1'  follow=on
 #bspc rule -a Subl3 desktop='^2' follow=on
 #bspc rule -a discord desktop='^2' follow=on
-#bspc rule -a Steam desktop='^5' 
+#bspc rule -a Steam desktop='^5'
 #bspc rule -a mpv desktop='^6'  follow=on
 #bspc rule -a Transmission-gtk desktop='^7' follow=on
 #bspc rule -a Thunar desktop='^8' follow=on
@@ -86,14 +91,10 @@ bspc rule -a Xfce4-settings-manager state=tiled
 #bspc rule -a Pavucontrol  state=floating sticky=on
 #bspc rule -a rofi state=floating sticky=on
 
-
-
 #Spotify fix  --move desktop 10
-
 #sleep 1
 #wmctrl -r Spotify -t 10
 #exit
-
 
 #polybar hidden when fullscreen for vlc, youtube, mpv ...
 #find out the name of your monitor with xrandr
