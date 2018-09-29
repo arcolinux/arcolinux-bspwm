@@ -41,4 +41,4 @@ compton --config $HOME/.config/bspwm/compton.conf &
 #blueberry-tray &
 #thunar &
 #insync start &
-run discord &
+#run discord &
