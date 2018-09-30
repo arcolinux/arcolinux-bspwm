@@ -77,18 +77,20 @@ bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
 
 #open applications on specific workspaces
-#bspc rule -a Vivaldi-snapshot desktop='^1' follow=on
-#bspc rule -a Vivaldi-stable desktop='^1' follow=on
-#bspc rule -a Firefox desktop=^1
+bspc rule -a Firefox desktop='^1' follow=on
 #bspc rule -a Google-chrome desktop='^1' follow=on
 #bspc rule -a Chromium desktop='^1'  follow=on
 #bspc rule -a Subl3 desktop='^2' follow=on
-#bspc rule -a discord desktop='^2' follow=on
+bspc rule -a Atom desktop='^2' follow=on
 #bspc rule -a Steam desktop='^5'
+bspc rule -a vlc desktop='^6'  follow=on
 #bspc rule -a mpv desktop='^6'  follow=on
+bspc rule -a Vivaldi-stable desktop='^6' follow=on
+#bspc rule -a Vivaldi-snapshot desktop='^6' follow=on
 #bspc rule -a Transmission-gtk desktop='^7' follow=on
-#bspc rule -a Thunar desktop='^8' follow=on
-#bspc rule -a Spotify desktop='^10' follow=on
+bspc rule -a Thunar desktop='^8' follow=on
+bspc rule -a discord desktop='^9' follow=on
+bspc rule -a Spotify desktop='^10' follow=on
 
 #Spotify fix  --move desktop 10
 #sleep 1

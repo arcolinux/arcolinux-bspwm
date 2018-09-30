@@ -32,13 +32,17 @@ run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
+blueberry-tray &
 compton --config $HOME/.config/bspwm/compton.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #nitrogen --restore &
-#caffeine &
-#thunar &
-#blueberry-tray &
-#dropbox &
-#insync start &
+#run caffeine &
+#run vivaldi-stable &
+#run firefox &
+#run thunar &
+#run dropbox &
+#run insync start &
 #run discord &
+#run spotify &
+#run atom &
