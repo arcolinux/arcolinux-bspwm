@@ -37,8 +37,8 @@ compton --config $HOME/.config/bspwm/compton.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 #nitrogen --restore &
 #caffeine &
-#dropbox &
-#blueberry-tray &
 #thunar &
+#blueberry-tray &
+#dropbox &
 #insync start &
 #run discord &

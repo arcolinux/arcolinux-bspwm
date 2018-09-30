@@ -70,7 +70,7 @@ bspc rule -a Oblogout state=floating
 #bspc rule -a rofi state=floating sticky=on
 #bspc rule -a Skype state=floating
 #bspc rule -a Stacer state=floating
-#bspc rule -a Xfce4-appfinder  state=floating sticky=on
+#bspc rule -a Xfce4-appfinder state=floating sticky=on
 
 #Tiled applications
 bspc rule -a Gnome-disks state=tiled
