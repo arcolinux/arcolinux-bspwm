@@ -340,6 +340,8 @@ XF86AudioMute
     amixer -D pulse set Master 1+ toggle
 
 #Playerctl works for Pragha, Spotify and others
+#DELETE the line for mpc if you want to use playerctl
+#putting a hashtag in front of the mpc line will NOT work
 #mpc works for ncmpcpp
 
 #PLAY
