@@ -94,6 +94,10 @@ super + v
 super + w
     vivaldi-stable
 
+#Hide polybar
+super + y
+    polybar-msg cmd toggle
+
 #Oblogout
 super + x
     oblogout
@@ -221,7 +225,7 @@ ctrl + alt + Return
 #Keyboard dependent
 #Urxvt
 #ctrl + alt + KP_Enter
-#     urxvt     
+#     urxvt
 
 
 #########################
