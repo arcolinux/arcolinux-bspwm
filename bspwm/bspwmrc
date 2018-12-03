@@ -88,7 +88,7 @@ bspc rule -a vlc desktop='^6'  follow=on
 bspc rule -a Vivaldi-stable desktop='^6' follow=on
 #bspc rule -a Vivaldi-snapshot desktop='^6' follow=on
 #bspc rule -a Transmission-gtk desktop='^7' follow=on
-bspc rule -a Thunar desktop='^8' follow=on
+#bspc rule -a Thunar desktop='^8' follow=on
 bspc rule -a discord desktop='^9' follow=on
 bspc rule -a Spotify desktop='^10' follow=on
 
