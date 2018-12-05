@@ -6,6 +6,7 @@ $HOME/.config/bspwm/autostart.sh
 #bspc config external_rules_command ~/.config/bspwm/external_rules_command
 
 #BSPWM configuration
+#bspc config border_radius       8
 bspc config border_width         2
 bspc config window_gap           10
 bspc config top_padding          30
