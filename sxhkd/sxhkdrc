@@ -227,6 +227,10 @@ ctrl + alt + Return
 #ctrl + alt + KP_Enter
 #     urxvt
 
+#pamac-manager
+ctrl + alt + p
+     pamac-manager
+
 
 #########################
 # ALT + ... KEYS        #
