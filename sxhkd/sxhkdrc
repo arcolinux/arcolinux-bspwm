@@ -74,10 +74,6 @@ super + m
 super + p
 	bspc node --state \~pseudo_tiled
 
-#Firefox
-super + q
-    firefox
-
 #Rofi theme selector
 super + r
     rofi-theme-selector
