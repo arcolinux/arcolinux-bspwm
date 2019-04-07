@@ -141,6 +141,10 @@ super + shift + s
 super + shift + q
 	bspc node -c
 
+#kill
+super + q
+	bspc node -c	
+
 #Logout
 super + shift + x
 	bspc quit
