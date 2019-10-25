@@ -487,6 +487,14 @@ super + shift + Left
 super + shift + Right
 		bspc node -m next --follow
 
+# Move focused window to other monitor
+super + shift + Up
+	bspc node -m next --follow
+
+# Move focused window to other monitor
+super + shift + Down
+		bspc node -m next --follow
+
 #################################################################
 # SUPER + CONTROL KEYS    
 #################################################################
