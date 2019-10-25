@@ -1,6 +1,10 @@
-#########################
-# SUPER + FUNCTION KEYS #
-#########################
+#################################################################
+# KEYBOARD BINDINGS FOR ANY TWM 
+#################################################################
+
+#################################################################
+# SUPER + FUNCTION KEYS 
+#################################################################
 
 # Vivaldi
 super + F1
@@ -50,29 +54,37 @@ super + F11
 super + F12
     rofi -show run
 
-#########################
-# SUPER + ... KEYS      #
-#########################
+#################################################################
+# SUPER + ... KEYS      
+#################################################################
 
 #Atom
 super + e
     atom
 
-#Toggle fullscreen of window
-super + f
-	bspc node --state \~fullscreen
+#Browser
+super + w
+    vivaldi-stable
+
+#Conky-toggle
+super + c
+    conky-toggle
 
 #Htop
 super + h
     urxvt 'htop task manager' -e htop
 
-#music player
-super + m
-    pragha
+#Oblogout
+super + x
+    oblogout
 
-# Toggle pseudo tiling of window
-super + p
-	bspc node --state \~pseudo_tiled
+#Oblogout
+super + Pause
+    oblogout
+
+#Oblogout
+ctrl + alt + Delete
+   oblogout
 
 #Rofi theme selector
 super + r
@@ -86,34 +98,26 @@ super + t
 super + v
     pavucontrol
 
-#Browser
-super + w
-    vivaldi-stable
+#Pragha
+super + m
+    pragha
 
-#Hide polybar
-super + y
-    polybar-msg cmd toggle
-
-#Oblogout
-super + x
-    oblogout
+#Termite
+super + Return
+    termite
 
 #Xkill
 super + Escape
     xkill
 
-#Terminal emulator
-super + Return
-	urxvt
-
 #Keyboard dependent
-#Terminal emulator
+#termite
 #super + KP_Enter
-#	urxvt
+#	termite
 
-#########################
-# SUPER + SHIFT KEYS    #
-#########################
+#################################################################
+# SUPER + SHIFT KEYS    
+#################################################################
 
 #File-Manager
 super + shift + Return
@@ -124,40 +128,34 @@ super + shift + Return
 #super + shift + KP_Enter
 #	thunar
 
-
-#DMENU
+#dmenu
 super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
-
-#Reload bspwm
-super + shift + r
-	~/.config/bspwm/bspwmrc
 
 #reload sxhkd:
 super + shift + s
 	pkill -USR1 -x sxhkd
 
-#kill
-super + shift + q
-	bspc node -c
-
-#kill
-super + q
-	bspc node -c	
-
-#Logout
-super + shift + x
-	bspc quit
+#Keyboard dependent
+#super + shift + KP_Enter
+#	thunar
 
 
-#########################
-# CONTROL + ALT KEYS    #
-#########################
+#################################################################
+# CONTROL + ALT KEYS    
+#################################################################
 
-#Xfce4-appfinder
-ctrl + alt + a
-     xfce4-appfinder
+#am-rotate-conky
+ctrl + alt + Next
+     am-rotate-conky -n
 
+#am-rotate-conky
+ctrl + alt + Prior
+    am-rotate-conky -p
+
+#Atom
+ctrl + alt + w
+     atom
 #File-Manager
 ctrl + alt + b
      thunar
@@ -165,6 +163,10 @@ ctrl + alt + b
 #Catfish
 ctrl + alt + c
      catfish
+
+#Chromium
+ctrl + alt + g
+    chromium -no-default-browser-check
 
 #Evolution
 ctrl + alt + e
@@ -174,68 +176,64 @@ ctrl + alt + e
 ctrl + alt + f
      firefox
 
-#Chromium
-ctrl + alt + g
-     chromium -no-default-browser-check
-
 #Nitrogen
 ctrl + alt + i
      nitrogen
 
-#Screen-Locker
+#slim-lock
 ctrl + alt + k
      slimlock
+
+#Slimlock
+ctrl + alt + l
+    slimlock
+
+#Pamac-manager
+ctrl + alt + p
+    pamac-manager
 
 #Xfce4-settings-manager
 ctrl + alt + m
      xfce4-settings-manager
 
-#Compton Toggle
-ctrl + alt + o
-     ~/.config/bspwm/scripts/compton-toggle.sh
-
-#Spotify
-ctrl + alt + s
-     spotify
-
-#Urxvt
-ctrl + alt + t
-     urxvt
-
-#Rofi theme selector
-ctrl + alt + r
-   rofi-theme-selector
-
 #Pulse Audio Control
 ctrl + alt + u
      pavucontrol
 
+#Rofi theme selector
+ctrl + alt + r
+  rofi-theme-selector
+
+#Spotify
+ctrl + alt + s
+   spotify
+
+#Termite
+ctrl + alt + Return
+    termite
+
+#termite
+ctrl + alt + t
+    termite
+
 #Vivaldi
 ctrl + alt + v
-     vivaldi-stable
+    vivaldi-stable
 
-#Atom
-ctrl + alt + w
-     atom
+#Xfce4-appfinder
+ctrl + alt + a
+    xfce4-appfinder
 
-#Urxvt
-ctrl + alt + Return
-     urxvt
 
 #Keyboard dependent
-#Urxvt
+#termite
 #ctrl + alt + KP_Enter
-#     urxvt
-
-#pamac-manager
-ctrl + alt + p
-     pamac-manager
+#     termite
 
 
-#########################
-# ALT + ... KEYS        #
-#########################
-
+#################################################################
+# ALT + ... KEYS        
+#################################################################
 
 #Wallpaper trash
 alt + t
@@ -261,9 +259,9 @@ alt + Left
 alt + Right
     variety -n
 
-#Wallpaper pause
+#Wallpaper toggle-pause
 alt + Up
-    variety --pause
+    variety --toggle-pause
 
 #Wallpaper resume
 alt + Down
@@ -278,10 +276,9 @@ alt + F3
     xfce4-appfinder
 
 
-#########################
-#VARIETY KEYS WITH PYWAL#
-#########################
-
+#################################################################
+#VARIETY KEYS WITH PYWAL
+#################################################################
 
 #Wallpaper trash
 alt + shift + t
@@ -303,20 +300,18 @@ alt + shift + f
 alt + shift + u
     wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
-#########################
-# CONTROL + SHIFT KEYS  #
-#########################
+#################################################################
+# CONTROL + SHIFT KEYS  
+#################################################################
 
 #Xcfe4-TaskManager
 ctrl + shift + Escape
     xfce4-taskmanager
 
 
-#########################
-#     SCREENSHOTS       #
-#########################
-
-
+#################################################################
+#     SCREENSHOTS       
+#################################################################
 
 #Scrot
 Print
@@ -331,9 +326,18 @@ ctrl + shift + Print
      gnome-screenshot -i
 
 
-#########################
-#     MULTIMEDIA KEYS   #
-#########################
+#################################################################
+#     FUNCTION KEYS   
+#################################################################
+
+#xfce4-terminal dropdown
+F12
+    xfce4-terminal --drop-down
+
+
+#################################################################
+#     MULTIMEDIA KEYS   
+#################################################################
 
 #Raises volume
 XF86AudioRaiseVolume
@@ -348,29 +352,29 @@ XF86AudioMute
     amixer -D pulse set Master 1+ toggle
 
 #Playerctl works for Pragha, Spotify and others
-#DELETE the line for mpc if you want to use playerctl
-#putting a hashtag in front of the mpc line will NOT work
-#mpc works for ncmpcpp
+#Delete the line for playerctl if you want to use mpc
+#and replace it with the corresponding code
+#mpc works for e.g.ncmpcpp
+#mpc toggle
+#mpc next
+#mpc prev
+#mpc stop
 
 #PLAY
 XF86AudioPlay
-    mpc toggle
-    #playerctl play-pause
+    playerctl play-pause
 
 #Next
 XF86AudioNext
-     mpc next
-     #playerctl next
+    playerctl next
 
 #previous
 XF86AudioPrev
-    mpc prev
-    #playerctl previous
+    playerctl previous
 
 #Stop
 XF86AudioStop
-    mpc stop
-    #playerctl stop
+    playerctl stop
 
 #Brightness up
 XF86MonBrightnessUp
@@ -380,45 +384,161 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
     xbacklight -dec 10
 
-
 #########################
-# BSPWM LAYOUT KEYS     #
+#        POLYBAR        #
 #########################
 
-#azerty keyboard layout for numbers 1-10
-#{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#Hide polybar
+super + y
+    polybar-msg cmd toggle
 
 #################################################################
-
-#Focus selected desktop FOR QWERTY KEYBOARDS
-super + {1-9,0}
-	bspc desktop -f '^{1-9,10}'
-
-#Focus selected desktop	FOR AZERTY KEYBOARDS
-#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-#    bspc desktop -f '^{1-9,10}'
-
+#################################################################
+##################   DESKTOP SPECIFIC    ########################
+#################################################################
 #################################################################
 
-#Move window to selected desktop FOR QWERTY KEYBOARDS
-super + shift + {1-9,0}
-    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
-
-#Move window to selected desktop FOR AZERTY KEYBOARDS
-#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-#    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
-
+#################################################################
+# CTRL + ALT KEYS    
 #################################################################
 
+#Compton Toggle
+ctrl + alt + o
+    ~/.config/bspwm/scripts/compton-toggle.sh
 
-#Focus selected desktop
-alt + Tab
-	bspc desktop -f '^{1-9,10}'
+#################################################################
+# SUPER + KEYS      
+#################################################################
+
+#Toggle fullscreen of window
+super + f
+	bspc node --state \~fullscreen
+
+# Toggle pseudo tiling of window
+super + p
+	bspc node --state \~pseudo_tiled
+
+#kill
+super + q
+	bspc node -c
+
+#################################################################
+# SUPER KEYS    
+#################################################################
 
 #Focus selected desktop
 super + Tab
 	bspc desktop -f '^{1-9,10}'
 
+# Increase/decrease window gap on focused desktop
+super + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+# set the window state
+super + space
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+#################################################################
+# SUPER + ALT KEYS    
+#################################################################
+
+# Move floating window
+super + alt + {_,shift + }{Left,Down,Up,Right}
+	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
+
+#################################################################
+# SUPER + CONTROL KEYS    
+#################################################################
+
+# Cancel preselection
+super + ctrl + space
+	bspc node --presel-dir cancel
+
+#################################################################
+# SUPER + SHIFT KEYS    
+#################################################################
+
+
+#Reload bspwm
+super + shift + r
+	~/.config/bspwm/bspwmrc
+
+#kill
+super + shift + q
+	bspc node -c
+
+#Logout
+super + shift + x
+	bspc quit
+
+# Focus/swap windows by direction
+super + {_,shift + }{h,j,k,l}
+	bspc node --{focus,swap} {west,south,north,east}
+
+# Flip layout vertically/horizontally
+super + {_,shift + }a
+	bspc node @/ --flip {vertical,horizontal}
+
+# Move focused window to other monitor
+super + shift + Left
+	bspc node -m next --follow
+
+# Move focused window to other monitor
+super + shift + Right
+		bspc node -m next --follow
+
+#################################################################
+# SUPER + CONTROL KEYS    
+#################################################################
+
+# Focus/swap windows by direction
+super + ctrl + {Left,Down,Up,Right}
+	bspc node --{focus} {west,south,north,east}
+
+# Contract tiled space
+super + ctrl + {h,j,k,l}
+	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
+
+# Focus parent/brother/first/second for preselection
+super + ctrl + {e,r,t,y}
+	bspc node --focus @{parent,brother,first,second}
+
+# Preselect the splitting area for next window on leaf/parent
+super + ctrl + {u,i,o,p}
+	bspc node --presel-dir \~{west,south,north,east}
+
+# Define splitting ratio for next window on leaf/parent
+super + ctrl + {_,shift +}{1-9}
+	bspc node {_,@/} --presel-ratio 0.{1-9}
+
+
+#################################################################
+# ALT KEYS    
+#################################################################
+
+#Focus selected desktop
+alt + Tab
+	bspc desktop -f '^{1-9,10}'
+
+	#Focus selected desktop
+alt + shift + Tab
+	bspc desktop -f '^{1-9,10}'
+
+#Rotate desktop
+alt + space
+	bspc node @/ --rotate {90,-90}
+
+#################################################################
+# ALT + SHIFT KEYS    
+#################################################################
+
+# Expand tiled space
+alt + shift + {h,j,k,l}
+	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+
+#################################################################
+# CTRL + ALT KEYS    
+#################################################################
 
 # Focus next/previous window
 ctrl + alt + Left
@@ -436,54 +556,30 @@ ctrl +alt + Up
 ctrl + alt + Down
 	bspc node --focus south
 
-#Rotate desktop
-alt + space
-	bspc node @/ --rotate {90,-90}
+#################################################################
+#################################################################
+##################   AZERTY/QWERTY/ ... KEYBOARD#################
+#################################################################
+#################################################################
 
-# Focus/swap windows by direction
-super + {_,shift + }{h,j,k,l}
-	bspc node --{focus,swap} {west,south,north,east}
+#Switch here between qwerty and azerty or make new one
+#Focus selected desktop FOR QWERTY KEYBOARDS
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
 
-# Focus/swap windows by direction
-ctrl + super + {Left,Down,Up,Right}
-	bspc node --{focus} {west,south,north,east}
+#Focus selected desktop	FOR AZERTY KEYBOARDS
+#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    bspc desktop -f '^{1-9,10}'
 
-# Flip layout vertically/horizontally
-super + {_,shift + }a
-	bspc node @/ --flip {vertical,horizontal}
+#################################################################
 
-# Expand tiled space
-alt + shift + {h,j,k,l}
-	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+#Switch here between qwerty and azerty or make new one
+#Move window to selected desktop FOR QWERTY KEYBOARDS
+super + shift + {1-9,0}
+    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
-# Contract tiled space
-super + ctrl + {h,j,k,l}
-	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
+#Move window to selected desktop FOR AZERTY KEYBOARDS
+#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
-# Increase/decrease window gap on focused desktop
-super + bracket{left,right}
-	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
-
-# Move floating window
-super + alt + {_,shift + }{Left,Down,Up,Right}
-	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
-
-# set the window state
-super + space
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-
-# Focus parent/brother/first/second for preselection
-super + ctrl + {e,r,t,y}
-	bspc node --focus @{parent,brother,first,second}
-
-# Preselect the splitting area for next window on leaf/parent
-super + ctrl + {u,i,o,p}
-	bspc node --presel-dir \~{west,south,north,east}
-
-# Define splitting ratio for next window on leaf/parent
-super + ctrl + {_,shift +}{1-9}
-	bspc node {_,@/} --presel-ratio 0.{1-9}
-
-# Cancel preselection
-super + ctrl + space
-	bspc node --presel-dir cancel
+#################################################################
