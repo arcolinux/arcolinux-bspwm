@@ -188,6 +188,10 @@ ctrl + alt + k
 ctrl + alt + l
     slimlock
 
+#Slimlock
+super + k
+    slimlock
+
 #Pamac-manager
 ctrl + alt + p
     pamac-manager
