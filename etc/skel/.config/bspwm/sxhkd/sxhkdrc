@@ -112,8 +112,8 @@ super + Escape
 
 #Keyboard dependent
 #termite
-#super + KP_Enter
-#	termite
+super + KP_Enter
+	termite
 
 #################################################################
 # SUPER + SHIFT KEYS
