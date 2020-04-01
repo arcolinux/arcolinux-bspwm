@@ -74,17 +74,17 @@ super + c
 super + h
     urxvt 'htop task manager' -e htop
 
-#Oblogout
+#arcolinux-logout
 super + x
-    oblogout
+    arcolinux-logout
 
-#Oblogout
+#arcolinux-logout
 super + Pause
-    oblogout
+    arcolinux-logout
 
-#Oblogout
+#arcolinux-logout
 ctrl + alt + Delete
-   oblogout
+   arcolinux-logout
 
 #Rofi theme selector
 super + r
