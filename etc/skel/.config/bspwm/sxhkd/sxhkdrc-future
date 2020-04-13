@@ -78,14 +78,6 @@ super + h
 super + x
     arcolinux-logout
 
-#arcolinux-logout
-super + Pause
-    arcolinux-logout
-
-#arcolinux-logout
-ctrl + alt + Delete
-   arcolinux-logout
-
 #Rofi theme selector
 super + r
     rofi-theme-selector
@@ -194,10 +186,6 @@ ctrl + alt + k
 
 #arcolinux-logout
 ctrl + alt + l
-    arcolinux-logout
-
-#arcolinux-logout
-super + k
     arcolinux-logout
 
 #Pamac-manager
