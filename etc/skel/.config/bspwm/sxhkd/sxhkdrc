@@ -143,7 +143,7 @@ ctrl + alt + w
 
 #arcolinux-tweak-tool
 ctrl + alt + e
-    arcolinux-tweak-tool     
+    arcolinux-tweak-tool
 
 #conky-rotate
 ctrl + alt + Next
@@ -579,8 +579,12 @@ ctrl + alt + Down
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 
-#Focus selected desktop	FOR AZERTY KEYBOARDS
+#Focus selected desktop	FOR BELIGIAN AZERTY KEYBOARDS
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+#    bspc desktop -f '^{1-9,10}'
+
+#Focus selected desktop	FOR FRNECH AZERTY KEYBOARDS
+#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
 #    bspc desktop -f '^{1-9,10}'
 
 #################################################################
