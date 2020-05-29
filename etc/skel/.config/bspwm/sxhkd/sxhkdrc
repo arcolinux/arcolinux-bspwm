@@ -153,9 +153,6 @@ ctrl + alt + Next
 ctrl + alt + Prior
     conky-rotate -p
 
-#Atom
-ctrl + alt + w
-     atom
 #File-Manager
 ctrl + alt + b
      thunar
