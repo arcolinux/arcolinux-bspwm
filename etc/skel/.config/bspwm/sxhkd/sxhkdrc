@@ -465,8 +465,8 @@ super + shift + q
 	bspc node -c
 
 #Logout
-super + shift + x
-	bspc quit
+#super + shift + x
+#	bspc quit
 
 # Focus/swap windows by direction
 super + {_,shift + }{h,j,k,l}
