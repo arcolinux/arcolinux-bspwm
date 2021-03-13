@@ -61,6 +61,7 @@ bspc rule -a VirtualBox Machine state=fullscreen
 bspc rule -a Arandr state=floating
 bspc rule -a Arcolinux-tweak-tool.py state=floating
 bspc rule -a Arcolinux-welcome-app.py state=floating
+bspc rule -a Arcolinux-calamares-tool.py state=floating
 bspc rule -a feh state=floating
 #bspc rule -a mpv state=floating sticky=on
 #bspc rule -a Font-manager state=floating
