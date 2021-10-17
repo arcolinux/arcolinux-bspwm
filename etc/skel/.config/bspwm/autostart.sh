@@ -19,6 +19,14 @@ $HOME/.config/polybar/launch.sh &
 #change your keyboard if you need it
 #setxkbmap -layout be
 
+keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
+
+if [ $keybLayout = "be" ]; then
+  run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc-azerty &
+else
+  run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
+fi
+
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &
 feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
@@ -27,7 +35,6 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
-run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 conky -c $HOME/.config/bspwm/system-overview &
 run variety &
