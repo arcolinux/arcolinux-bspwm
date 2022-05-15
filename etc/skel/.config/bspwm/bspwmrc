@@ -59,7 +59,7 @@ bspc rule -a VirtualBox Machine state=fullscreen
 
 #Floating applications
 bspc rule -a Arandr state=floating
-bspc rule -a Archlinux-tweak-tool.py state=floating
+#bspc rule -a Archlinux-tweak-tool.py state=floating
 bspc rule -a Arcolinux-welcome-app.py state=floating
 bspc rule -a Arcolinux-calamares-tool.py state=floating
 bspc rule -a feh state=floating
