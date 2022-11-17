@@ -338,11 +338,11 @@ F12
 
 #Raises volume
 XF86AudioRaiseVolume
-    amixer set Master 10%+
+    amixer -D pulse set Master 10%+
 
 #Lowers volume
 XF86AudioLowerVolume
-    amixer set Master 10%-
+    amixer -D pulse set Master 10%-
 
 #Mute
 XF86AudioMute
@@ -576,11 +576,11 @@ ctrl + alt + Down
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 
-#Focus selected desktop	FOR BELIGIAN AZERTY KEYBOARDS
+#Focus selected desktop	FOR BELGIAN AZERTY KEYBOARDS
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
 #    bspc desktop -f '^{1-9,10}'
 
-#Focus selected desktop	FOR FRNECH AZERTY KEYBOARDS
+#Focus selected desktop	FOR FRENCH AZERTY KEYBOARDS
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
 #    bspc desktop -f '^{1-9,10}'
 
