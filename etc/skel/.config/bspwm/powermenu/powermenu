@@ -80,7 +80,7 @@ run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
 		betterlockscreen --lock
 	elif [[ "$1" == '--opt2' ]]; then
-		confirm_run 'pkill chadwm'
+		confirm_run 'pkill bspwm'
 	# elif [[ "$1" == '--opt3' ]]; then
 	# 	confirm_run 'mpc -q pause' 'pulsemixer --mute' 'betterlockscreen --suspend'
 	elif [[ "$1" == '--opt4' ]]; then
