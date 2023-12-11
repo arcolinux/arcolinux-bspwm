@@ -12,7 +12,7 @@ configuration {
 @import                          "shared/fonts.rasi"
 
 /*
-USE_ICON=YES
+USE_ICON=NO
 */
 
 /*****----- Main Window -----*****/
@@ -117,7 +117,7 @@ element {
     cursor:                      pointer;
 }
 element-text {
-    font:                        "feather 20";
+    font:                        "Noto Sans 16";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
