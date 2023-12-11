@@ -78,6 +78,10 @@ super + h
 super + x
     archlinux-logout
 
+#powermenu
+super + shift + x
+    ~/.config/arco-chadwm/powermenu/powermenu
+
 #Rofi theme selector
 super + r
     rofi-theme-selector
