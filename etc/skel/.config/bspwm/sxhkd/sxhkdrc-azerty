@@ -80,7 +80,7 @@ super + x
 
 #powermenu
 super + shift + x
-    ~/.config/arco-chadwm/powermenu/powermenu
+    ~/.config/bspwm/powermenu/powermenu
 
 #Rofi theme selector
 super + r
