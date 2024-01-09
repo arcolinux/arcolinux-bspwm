@@ -38,9 +38,9 @@ super + F7
 super + F8
     thunar
 
-#Evolution
+#Audio player
 super + F9
-    evolution
+    lollypop
 
 #Spotify
 super + F10
@@ -94,9 +94,9 @@ super + t
 super + v
     pavucontrol
 
-#Pragha
+#Audio player
 super + m
-    pragha
+    lollypop
 
 #alacritty
 super + Return
@@ -128,7 +128,7 @@ super + shift + Return
 super + shift + d
 	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
-#dmenu
+#rofi
 super + d
     ~/.config/bspwm/launcher/launcher.sh
 
