@@ -68,7 +68,6 @@ bspc rule -a feh state=floating
 bspc rule -a Galculator state=floating
 #bspc rule -a Gpick state=floating sticky=on
 #bspc rule -a Nitrogen state=floating
-bspc rule -a Oblogout state=floating
 #bspc rule -a Pavucontrol state=floating sticky=on
 #bspc rule -a Peek state=floating
 #bspc rule -a rofi state=floating sticky=on
