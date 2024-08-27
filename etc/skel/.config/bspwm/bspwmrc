@@ -85,7 +85,7 @@ bspc rule -a Xfce4-settings-manager state=tiled
 #bspc rule -a Google-chrome desktop='^1' follow=on
 #bspc rule -a Chromium desktop='^1'  follow=on
 #bspc rule -a Subl desktop='^2' follow=on
-#bspc rule -a Atom desktop='^2' follow=on
+#bspc rule -a Code desktop='^2' follow=on
 #bspc rule -a Steam desktop='^5'
 #bspc rule -a vlc desktop='^6'  follow=on
 #bspc rule -a mpv desktop='^6'  follow=on
